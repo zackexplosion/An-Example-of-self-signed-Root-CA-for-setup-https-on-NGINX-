@@ -1,0 +1,9 @@
+services:
+  nginx:
+    image: nginx:latest
+    volumes:
+      - ./certs:/etc/ssl/certs
+      - ./nginx.conf:/etc/nginx/nginx.conf
+    ports:
+      - "443:443"
+
